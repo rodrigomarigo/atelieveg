@@ -14,33 +14,33 @@ class Pasta extends React.Component{
                   titulo: 'Salgados',
                   imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                   id: 1,
-                  linkUrl: 'shop/hats'
+                  linkUrl: 'shop/salgados'
                 },
                 {
                   titulo: 'Doces',
                   imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                   id: 2,
-                  linkUrl: 'shop/jackets'
+                  linkUrl: 'shop/doces'
                 },
                 {
                   titulo: 'Bebidas',
                   imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
                   id: 3,
-                  linkUrl: 'shop/sneakers'
+                  linkUrl: 'shop/bebidas'
                 },
                 {
                   titulo: 'Congelados',
                   imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
                   size: 'large',
                   id: 4,
-                  linkUrl: 'shop/womens'
+                  linkUrl: 'shop/congelados'
                 },
                 {
                   titulo: 'Faça você mesmo',
                   imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
                   size: 'large',
                   id: 5,
-                  linkUrl: 'shop/mens'
+                  linkUrl: 'shop/facavcmsm'
                 }
               ]
         }
@@ -49,8 +49,8 @@ class Pasta extends React.Component{
         return (
             <div className = 'pasta-menu'>
                 {
-                    this.state.secoes.map(({titulo, imageUrl, id, size}) => (
-                        <ItemMenu key={id} titulo={titulo} imageUrl={imageUrl} size = {size} />
+                    this.state.secoes.map(({id, ...otherSectionProps }) => (
+                        <ItemMenu key={id} {...otherSectionProps} />
                     ))
                 }
             </div>
