@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import HomePage from './paginas/homepage/homepage.component';
 import { Switch, Route, Link } from 'react-router-dom';
-import ShopPage from './paginas/shop/shop.component.jsx'
+import ShopPage from './paginas/shop/shop.component.jsx';
+import Header from './componentes/header/header.component.jsx';
 
 const SalgadosPagina = () => (
   <div>
@@ -13,12 +14,11 @@ const SalgadosPagina = () => (
 function App() {
   return (
     <div>
-      <Switch>
-        <Route exact path='/' component = { HomePage }/>
-        <Route path='/shop' component = { ShopPage }/>
-      </Switch>
-        
-        
+      <Header/>
+        <Switch>
+          <Route exact path='/' component = { HomePage }/>
+          <Route path='/shop' component = { ShopPage }/>
+        </Switch>  
     </div>
   );
 }

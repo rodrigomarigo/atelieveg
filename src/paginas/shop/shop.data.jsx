@@ -1,247 +1,127 @@
 const SHOP_DATA = [
     {
       id: 1,
-      title: 'Hats',
-      routeName: 'hats',
+      title: 'Salgados',
+      routeName: 'salgados',
       items: [
         {
           id: 1,
-          name: 'Brown Brim',
-          imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-          price: 25
+          name: 'Coxinha',
+          imageUrl: 'https://blog.pajaris.com.br/wp-content/uploads/2020/08/Coxinha-Vegana-750x430.jpg',
+          price: 5
         },
         {
           id: 2,
-          name: 'Blue Beanie',
-          imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-          price: 18
+          name: 'Quiche',
+          imageUrl: 'https://portal-amb-imgs.clubedaana.com.br/2018/06/quiche-de-cogumelos-600x400.jpg',
+          price: 8
         },
         {
           id: 3,
-          name: 'Brown Cowboy',
-          imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-          price: 35
+          name: 'Bolinho de Mandioca',
+          imageUrl: 'https://img.cybercook.com.br/receitas/832/bolinho-de-mandioca-recheado-com-proteina-de-soja-fina-vegana-623x350.jpeg',
+          price: 4
         },
-        {
-          id: 4,
-          name: 'Grey Brim',
-          imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-          price: 25
-        },
-        {
-          id: 5,
-          name: 'Green Beanie',
-          imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-          price: 18
-        },
-        {
-          id: 6,
-          name: 'Palm Tree Cap',
-          imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-          price: 14
-        },
-        {
-          id: 7,
-          name: 'Red Beanie',
-          imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-          price: 18
-        },
-        {
-          id: 8,
-          name: 'Wolf Cap',
-          imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-          price: 14
-        },
-        {
-          id: 9,
-          name: 'Blue Snapback',
-          imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-          price: 16
-        }
       ]
     },
     {
       id: 2,
-      title: 'Sneakers',
-      routeName: 'sneakers',
+      title: 'Doces',
+      routeName: 'doces',
       items: [
         {
           id: 1,
-          name: 'Adidas NMD',
-          imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-          price: 220
+          name: 'Brigadeiro',
+          imageUrl: 'https://www.comidaereceitas.com.br/wp-content/uploads/2020/04/brigadeiro_vegano.jpg',
+          price: 2
         },
         {
           id: 2,
-          name: 'Adidas Yeezy',
-          imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-          price: 280
+          name: 'Paçoca',
+          imageUrl: 'https://blog.valda.com.br/wp-content/uploads/2018/07/214374-doces-para-veganos-conheca-x-opcoes-que-voce-pode-comprar.jpg',
+          price: 3
         },
         {
           id: 3,
-          name: 'Black Converse',
-          imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-          price: 110
+          name: 'Brownie',
+          imageUrl: 'https://i2.wp.com/pequenavegetariana.com/wp-content/uploads/2017/03/IMG_0885-2.jpg',
+          price: 7
         },
-        {
-          id: 4,
-          name: 'Nike White AirForce',
-          imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-          price: 160
-        },
-        {
-          id: 5,
-          name: 'Nike Red High Tops',
-          imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-          price: 160
-        },
-        {
-          id: 6,
-          name: 'Nike Brown High Tops',
-          imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
-          price: 160
-        },
-        {
-          id: 7,
-          name: 'Air Jordan Limited',
-          imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-          price: 190
-        },
-        {
-          id: 8,
-          name: 'Timberlands',
-          imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-          price: 200
-        }
       ]
     },
     {
       id: 3,
-      title: 'Jackets',
-      routeName: 'jackets',
+      title: 'Bebidas',
+      routeName: 'bebidas',
       items: [
         {
           id: 1,
-          name: 'Black Jean Shearling',
-          imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-          price: 125
+          name: 'Cappuccino',
+          imageUrl: 'https://t2.rg.ltmcdn.com/pt/images/7/7/0/img_cappuccino_funcional_3077_600.jpg',
+          price: 8
         },
         {
           id: 2,
-          name: 'Blue Jean Jacket',
-          imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-          price: 90
+          name: 'Smoothie',
+          imageUrl: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/kale-smoothie-d06d559.jpg',
+          price: 12
         },
         {
           id: 3,
-          name: 'Grey Jean Jacket',
-          imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-          price: 90
+          name: 'Iogurte',
+          imageUrl: 'https://criarcomercrescer.com/wp-content/uploads/2019/03/iogurte-de-caju-blog-9.jpg',
+          price: 9
         },
-        {
-          id: 4,
-          name: 'Brown Shearling',
-          imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-          price: 165
-        },
-        {
-          id: 5,
-          name: 'Tan Trench',
-          imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-          price: 185
-        }
       ]
     },
     {
       id: 4,
-      title: 'Womens',
-      routeName: 'womens',
+      title: 'Congelados',
+      routeName: 'congelados',
       items: [
         {
           id: 1,
-          name: 'Blue Tanktop',
-          imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+          name: 'Pizza Congelada',
+          imageUrl: 'https://img.cybercook.com.br/receitas/386/pizza-vegana-low-carb-2-623x350.jpeg',
           price: 25
         },
         {
           id: 2,
-          name: 'Floral Blouse',
-          imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-          price: 20
+          name: 'Lasanha Congelada',
+          imageUrl: 'https://s2.glbimg.com/-1f6hdmEkH7YrqTF1gO0lEB-n5U=/e.glbimg.com/og/ed/f/original/2019/09/16/lasanha-vegana.jpg',
+          price: 30
         },
         {
           id: 3,
-          name: 'Floral Dress',
-          imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-          price: 80
+          name: 'Nuggets de Soja Congelados',
+          imageUrl: 'https://img.cybercook.com.br/receitas/4/nuggets-na-airfryer-623x350.jpeg',
+          price: 15
         },
-        {
-          id: 4,
-          name: 'Red Dots Dress',
-          imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-          price: 80
-        },
-        {
-          id: 5,
-          name: 'Striped Sweater',
-          imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-          price: 45
-        },
-        {
-          id: 6,
-          name: 'Yellow Track Suit',
-          imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-          price: 135
-        },
-        {
-          id: 7,
-          name: 'White Blouse',
-          imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-          price: 20
-        }
       ]
     },
     {
       id: 5,
-      title: 'Mens',
-      routeName: 'mens',
+      title: 'Faça Você Mesmo',
+      routeName: 'facavcmsm',
       items: [
         {
           id: 1,
-          name: 'Camo Down Vest',
-          imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-          price: 325
+          name: 'Bolo Recheado',
+          imageUrl: 'https://www.oetker.com.br/Recipe/Recipes/oetker.com.br/br-pt/baking/image-thumb__67767__RecipeDetail/bolo-trufado-de-chocolate-com-avela.jpg',
+          price: 16
         },
         {
           id: 2,
-          name: 'Floral T-shirt',
-          imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
+          name: 'Muffin',
+          imageUrl: 'https://www.maypole.com.mt/wp-content/uploads/2018/09/Vanilla-Mini-Muffin.jpg',
           price: 20
         },
         {
           id: 3,
-          name: 'Black & White Longsleeve',
-          imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
+          name: 'Torta Salgada',
+          imageUrl: 'https://www.amorpelacomida.com.br/wp-content/uploads/2017/07/Torta-vegetariana-facil-sem-gluten-e-sem-lactose.jpg',
           price: 25
         },
-        {
-          id: 4,
-          name: 'Pink T-shirt',
-          imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-          price: 25
-        },
-        {
-          id: 5,
-          name: 'Jean Long Sleeve',
-          imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-          price: 40
-        },
-        {
-          id: 6,
-          name: 'Burgundy T-shirt',
-          imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-          price: 25
-        }
       ]
     }
   ]
