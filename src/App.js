@@ -6,10 +6,12 @@ import { connect } from 'react-redux';
 import ShopPage from './paginas/shop/shop.component.jsx';
 import Header from './componentes/header/header.component.jsx';
 import SignInSignOutPage from './paginas/sign-in-sign-up/sign-in-sign-up.component.jsx';
+import CheckoutPage from './paginas/checkout/checkout.component.jsx'
 import { auth, createUserProfileDocument } from './firebase/firebase.utils'
 import { render } from '@testing-library/react';
 import { setCurrentUser } from './redux/user/user.actions'
-
+import { selectCurrentUser } from './redux/user/user.selectors'
+import { createStructuredSelector } from 'reselect'
 
 class App extends React.Component{
   unsubscribeFromAuth = null;
@@ -44,6 +46,7 @@ class App extends React.Component{
           <Switch>
             <Route exact path='/' component = { HomePage }/>
             <Route path='/shop' component = { ShopPage }/>
+            <Route exact path='/checkout' component = { CheckoutPage }/>
             {/* Impedir o usuario logado de acessar a página de signIn */}
             <Route exact path='/signin' render={()=>this.props.currentUser ? (<Redirect to='/'/>) : (<SignInSignOutPage/>)}/>
           </Switch>  
@@ -51,8 +54,8 @@ class App extends React.Component{
     );
   } 
 }
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
 })
 
 const mapDispatchToProps = dispatch => ({

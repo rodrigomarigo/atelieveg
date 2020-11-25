@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { toggleCartHidden } from '../../redux/cart/cart.action.js';
 import { selectCartItemsCount } from '../../redux/cart/cart.selectors.js';
-
+import { createStructuredSelector} from 'reselect';
 import { ReactComponent as ShoppingIcon } from '../../assets/icone-sacola.svg'
 
 import './cart-icon.style.scss'
@@ -20,8 +20,8 @@ const mapDispatchToProps = dispatch => ({
 })
 
 //Faz a contagem de itens para mostrar no icone do carrinho
-const mapStateToProps = state => ({
-    itemCount: selectCartItemsCount(state)
+const mapStateToProps = createStructuredSelector({
+    itemCount: selectCartItemsCount
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartIcon)
