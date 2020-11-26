@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+    salgados: {
       id: 1,
       title: 'Salgados',
       routeName: 'salgados',
@@ -24,7 +24,7 @@ const SHOP_DATA = [
         },
       ]
     },
-    {
+    doces: {
       id: 2,
       title: 'Doces',
       routeName: 'doces',
@@ -49,7 +49,7 @@ const SHOP_DATA = [
         },
       ]
     },
-    {
+    bebidas: {
       id: 3,
       title: 'Bebidas',
       routeName: 'bebidas',
@@ -74,7 +74,7 @@ const SHOP_DATA = [
         },
       ]
     },
-    {
+    congelados: {
       id: 4,
       title: 'Congelados',
       routeName: 'congelados',
@@ -99,7 +99,7 @@ const SHOP_DATA = [
         },
       ]
     },
-    {
+    facavcmsm: {
       id: 5,
       title: 'Faça Você Mesmo',
       routeName: 'facavcmsm',
@@ -124,5 +124,5 @@ const SHOP_DATA = [
         },
       ]
     }
-  ]
+}
   export default SHOP_DATA
